@@ -1,71 +1,64 @@
 # OpenMonitor Science Kits
 
-Public notebooks, readers, schemas, and reproducible examples for selected
-OpenMonitor workflows.
+Reusable notebooks, readers, and short guides for working with selected
+OpenMonitor exports.
 
-OpenMonitor.org is the web platform. This repository is the public companion
-for researchers, students, and collaborators who want to read exported results,
-reproduce quick analyses, or cite OpenMonitor-derived products without needing
-access to the private platform source code.
+OpenMonitor provides web tools for exploring scientific data, journals,
+research profiles, and opportunities. This repository helps researchers,
+students, and collaborators reopen exported results, inspect the metadata, make
+quick plots, and cite OpenMonitor-derived products in a reproducible way.
 
-## Fast Start
+## Start Here
 
-Most users should not browse this repository from the root. OpenMonitor web
-tools link directly to the relevant kit, notebook, or guide.
+Most people arrive here from an OpenMonitor tool. Use the kit linked by the
+page that generated your export.
 
-- Solar AIA ROI light curves:
-  [`kits/solar/aia-roi-lightcurves`](kits/solar/aia-roi-lightcurves)
+Current public kit:
 
-## Available Kits
+- [Solar AIA ROI light curves](kits/solar/aia-roi-lightcurves): open AIA ROI
+  light-curve exports in Google Colab or local Python, inspect ROI metadata,
+  read FITS/CSV files, and compare runs.
 
-### Solar
+## What You Can Do
 
-- `aia-roi-lightcurves`: read AIA ROI exports from Solar OpenMonitor in Colab
-  or Python.
-- `goes-xrs`: placeholder for future GOES XRS export readers.
-- `flare-catalog`: placeholder for future flare-catalog examples.
-- `h-alpha-movies`: placeholder for future H-alpha movie notes.
+- Open an OpenMonitor export in Colab.
+- Read exported CSV, FITS, JSON, or metadata files.
+- Check column meanings and units.
+- Recreate quick-look plots from downloaded results.
+- Compare selected runs, such as multiple AIA wavelengths for the same flare.
+- Copy citation and methods text for reports, posters, or papers.
 
-### Atmospheric Electricity
+## Repository Map
 
-- `pg-openmonitor`: placeholder for future potential-gradient export readers.
-- `dst-kp-ae`: placeholder for future geomagnetic-index examples.
-- `vlf`: placeholder for future VLF examples.
+The repository is organized by OpenMonitor domain so each tool has a stable
+home for examples and readers.
 
-### Journals
+- `kits/solar/`: Solar Lab export readers and examples.
+- `kits/atmospheric-electricity/`: atmospheric-electricity and geospace data
+  examples.
+- `kits/journals/`: journal and paper-search export readers.
+- `kits/peers/`: Peers catalog export readers.
+- `kits/calls/`: Calls and opportunity export readers.
+- `docs/`: citation, data policy, and reproducibility notes.
 
-- `journal-exports`: placeholder for future journal-table export readers.
-- `paper-search-exports`: placeholder for future paper-search export readers.
+Only the kits with a README and notebook are ready for use. Other folders are
+reserved for future public examples as OpenMonitor exports mature.
 
-### Peers
+## Data Policy
 
-- `catalog-exports`: placeholder for future Peers catalog export readers.
+This repository is intentionally lightweight. It does not mirror large provider
+archives or server-side caches. The notebooks read small OpenMonitor exports or
+download selected derived artifacts through public OpenMonitor links.
 
-### Calls
-
-- `opportunity-exports`: placeholder for future Calls export readers.
-
-## What Belongs Here
-
-- Google Colab notebooks.
-- Small Python readers for OpenMonitor public exports.
-- Export schemas and column guides.
-- Tiny sample files for examples and tests.
-- Citation, methods, and reproducibility notes.
-
-## What Does Not Belong Here
-
-- OpenMonitor web source code.
-- Private backend code, deployment scripts, queues, tokens, or secrets.
-- Raw scientific archives or heavy cached data.
-- Internal curation pipelines.
+Underlying observations remain with their official providers. OpenMonitor
+exports should be cited together with the relevant data provider.
 
 ## License
 
-- Code and notebooks: MIT, see [`LICENSE`](LICENSE).
-- Tiny sample data: CC0 1.0, see [`LICENSE-DATA.md`](LICENSE-DATA.md).
+- Code and notebooks: MIT, see [LICENSE](LICENSE).
+- Tiny sample data: CC0 1.0, see [LICENSE-DATA.md](LICENSE-DATA.md).
 - Documentation: CC BY 4.0 unless noted otherwise.
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff) and [`docs/citation.md`](docs/citation.md).
+See [CITATION.cff](CITATION.cff) and [docs/citation.md](docs/citation.md).

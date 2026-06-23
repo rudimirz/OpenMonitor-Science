@@ -11,12 +11,12 @@ Good contributions:
 - Clarify citation or metadata documentation.
 - Add a reader for a public OpenMonitor export.
 
-Please do not submit:
+Please avoid submitting:
 
-- private OpenMonitor platform source code;
+- OpenMonitor application or deployment code;
 - secrets, tokens, API keys, or local paths with credentials;
-- raw heavy scientific archives;
-- backend deployment scripts;
+- large raw scientific archives;
+- server deployment scripts;
 - provider data copied without clear redistribution rights.
 
 Open an issue or pull request with a short explanation of the affected kit.

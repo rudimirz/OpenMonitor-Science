@@ -12,5 +12,5 @@ A good kit should explain:
 - known limitations;
 - how to cite OpenMonitor and the original data providers.
 
-Heavy processing, deployment, curation, and cache internals remain outside this
-public repository.
+Large processing workflows, deployment files, and server-side caches are kept
+outside this lightweight public repository.
