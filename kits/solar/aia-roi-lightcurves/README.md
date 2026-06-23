@@ -22,6 +22,12 @@ aia_963db1ee7c6b49b9a9
 Run all cells to download the cached result and inspect the exported FITS,
 CSV, metadata, plot, and movie files.
 
+To compare AIA channels, run one Solar OpenMonitor AIA job per wavelength using
+the same event window and ROI, then paste the recovery codes into
+`OPENMONITOR_RESULTS` in the notebook. The notebook overlays the exported
+curves in actual units (`DN/s/pixel` when exposure-normalized) or in normalized
+modes for shape/timing comparison.
+
 ## What Files Do I Need?
 
 For a quick visual check:
@@ -49,6 +55,7 @@ For support or reproducibility:
 - prints ROI coordinates, wavelength, cadence, processing mode, and quality
   metadata;
 - plots the curves on a UTC axis;
+- overlays multiple downloaded runs for cross-wavelength comparison;
 - exports a clean table and a metadata summary.
 
 ## Important Limitations
